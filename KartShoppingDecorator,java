@@ -1,0 +1,7 @@
+public abstract class KartShoppingDecorator extends KartReceipt {
+	
+	KartReceipt kartReceipt;
+	
+	public abstract String getDescription();
+	
+}
