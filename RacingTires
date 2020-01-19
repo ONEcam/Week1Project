@@ -1,0 +1,10 @@
+public class RacingTires extends KartReceipt {
+	
+	public RacingTires() {
+		description = "Bridgestone YLR";
+	}
+ 
+	public double cost() {
+		return 220.33;
+	}
+}
