@@ -1,0 +1,30 @@
+
+public class KartReceiptTotal {
+	
+	public static void main(String args[]) {
+		KartReceipt kartreceipt = new RacingTires(); 
+		System.out.println(kartreceipt.getDescription() 
+				+ " $" + kartreceipt.cost());
+		
+		KartReceipt kartreceipt2 = new RacingBrakes();
+		kartreceipt2 = new RacingOil(kartreceipt2);
+		kartreceipt2 = new BalanceOwed(kartreceipt2);
+		System.out.println(kartreceipt2.getDescription() 
+				+ " $" + kartreceipt2.cost());	
+		
+		KartReceipt kartreceipt3 = new RacingWheels();
+		kartreceipt3 = new RacingOil(kartreceipt3);
+		kartreceipt3 = new BalanceOwed(kartreceipt3);
+		System.out.println(kartreceipt3.getDescription() 
+				+ " $" + kartreceipt3.cost());
+		
+		KartReceipt kartreceipt4 = new RacingGas();
+		kartreceipt4 = new RacingOil(kartreceipt4);
+		kartreceipt4 = new BalanceOwed(kartreceipt4);
+		System.out.println(kartreceipt4.getDescription() 
+				+ " $" + kartreceipt4.cost());
+	
+		
+	}
+
+}
